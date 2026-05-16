@@ -17,6 +17,10 @@ img {
   display: block;
 }
 
+.email{
+  color: #4f4b4b;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
