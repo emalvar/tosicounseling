@@ -258,6 +258,13 @@ p {
   margin-top: 40px;
 }
 
+.form-success {
+  display: none;
+  margin-top: 18px;
+  color: #6d5a67;
+  font-weight: 600;
+}
+
 /* FOOTER */
 
 .footer {
