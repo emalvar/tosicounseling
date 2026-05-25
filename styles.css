@@ -195,6 +195,21 @@ p {
   border-radius: 30px;
 }
 
+.about-linkedin {
+  margin-top: 26px;
+}
+
+.about-linkedin a {
+  color: #6d5a67;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(109, 90, 103, 0.25);
+  transition: all 0.2s ease;
+}
+
+.about-linkedin a:hover {
+  opacity: 0.75;
+}
+
 /* CARDS */
 
 .card-grid {
@@ -270,20 +285,61 @@ p {
 /* FOOTER */
 
 .footer {
-  padding: 40px 0;
-  text-align: center;
+  padding: 26px 0;
+  border-top: 1px solid #ddd;
+  background: #f7f3ee;
+}
+
+.footer-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .footer-logo {
-  height: 90px;
-  margin: auto;
-  margin-bottom: 20px;
+  height: 54px;
+  width: auto;
 }
 
-.form-note {
-  font-size: 0.88rem;
+.footer-copy {
+  margin: 0;
+  font-size: 0.92rem;
   opacity: 0.75;
-  margin-top: 10px;
+}
+
+/* LINKEDIN */
+
+.linkedin-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  background: rgba(127, 155, 144, 0.14);
+
+  border-radius: 999px;
+
+  transition: all 0.2s ease;
+
+  text-decoration: none;
+}
+
+.linkedin-icon:hover {
+  background: rgba(127, 155, 144, 0.22);
+  transform: translateY(-1px);
+}
+
+.linkedin-icon img {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 /* MOBILE */
@@ -378,5 +434,13 @@ p {
 
   .contact-form {
     width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    height: 46px;
   }
 }
