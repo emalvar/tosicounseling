@@ -285,15 +285,15 @@ p {
 /* FOOTER */
 
 .footer {
-  padding: 26px 0;
-  border-top: 1px solid #ddd;
+  padding: 30px 0;
+  border-top: 1px solid #e0dcd7; /* Un borde más sutil */
   background: #f7f3ee;
 }
 
 .footer-content {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -302,44 +302,39 @@ p {
 }
 
 .footer-logo {
-  height: 54px;
+  height: 50px; /* Un poco más pequeño para dar aire */
   width: auto;
 }
 
 .footer-copy {
   margin: 0;
-  font-size: 0.92rem;
-  opacity: 0.75;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
 }
 
 /* LINKEDIN */
-
 .linkedin-icon {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 
-  width: 42px;
-  height: 42px;
-
-  background: rgba(127, 155, 144, 0.14);
-
-  border-radius: 999px;
-
-  transition: all 0.2s ease;
-
-  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background: rgba(127, 155, 144, 0.15);
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .linkedin-icon:hover {
-  background: rgba(127, 155, 144, 0.22);
-  transform: translateY(-1px);
+  background: rgba(127, 155, 144, 0.3);
+  transform: scale(1.05);
 }
 
 .linkedin-icon img {
-  width: 18px;
-  height: 18px;
-  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 /* MOBILE */
@@ -437,10 +432,14 @@ p {
   }
   .footer-content {
     flex-direction: column;
-    text-align: center;
+    gap: 15px;
   }
 
   .footer-logo {
-    height: 46px;
+    height: 42px;
+  }
+
+  .footer-copy {
+    order: 2;
   }
 }
