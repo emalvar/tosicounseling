@@ -5,6 +5,8 @@ form.addEventListener("submit", async function (e) {
 
   e.preventDefault();
 
+  successMessage.style.display = "none";
+
   const formData = new FormData(form);
 
   try {
