@@ -1,11 +1,4 @@
 Oportunidades de mejora
-3. CSS: Las transiciones pueden ser más suave
-    Botones y links usan transform: translateY(-1px) que es muy sutil. Considerá:
-
-    Aumentar a -2px o -3px para más claridad visual
-    Agregar transition-duration: 0.3s en lugar de 0.2s (se siente mejor)
-
-
 5. JavaScript: Sin validación de email en el cliente
     Aunque HTML5 valida, podés mejorar la UX con feedback visual:
     javascriptconst emailInput = form.querySelector('input[type="email"]');
