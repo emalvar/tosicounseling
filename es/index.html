@@ -13,6 +13,8 @@
       Terapia Bilingüe en Wisconsin | Tosi Counseling & Family Services
     </title>
     <link rel="canonical" href="https://tosicounseling.com/es/" />
+    <link rel="alternate" hreflang="en-US" href="https://tosicounseling.com/" />
+    <link rel="alternate" hreflang="es" href="https://tosicounseling.com/es/" />
     <meta
       name="description"
       content="Terapia virtual bilingüe en inglés y español para individuos, niños, adolescentes y familias en Wisconsin."
@@ -209,6 +211,8 @@
             id="contact-form"
             action="https://formspree.io/f/xqejzqyz"
             method="POST"
+            role="form"
+            aria-label="Contact form"
           >
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
@@ -225,7 +229,7 @@
               placeholder="¿Cómo puedo ayudarte?"
             ></textarea>
             <button type="submit" class="btn-primary">Enviar Mensaje</button>
-            <p class="form-note">
+            <p id="form-note" class="form-note" role="doc-notice">
               Por favor evitá compartir información médica sensible o urgente a
               través de este formulario.
             </p>
@@ -236,7 +240,8 @@
           <div class="contact-info">
             <p>
               <a href="mailto:mtosi@tosicounseling.com" class="email"
-                >mtosi@tosicounseling.com</a>
+                >mtosi@tosicounseling.com</a
+              >
             </p>
             <p><a href="tel:+14144368537">(414) 436-8537</a></p>
             <p>Sesiones virtuales disponibles en todo Wisconsin</p>
